@@ -14,6 +14,9 @@ namespace WeddingWebsite.Classes
         public string Username { get; set; }
         [Required]
         [StringLength(30)]
+        public string Password { get; set; }
+        [Required]
+        [StringLength(30)]
         public string Firstname { get; set; }
         public string  Lastname { get; set; }
 
