@@ -18,7 +18,13 @@ namespace WeddingWebsite.Classes
         [Required]
         [StringLength(30)]
         public string Firstname { get; set; }
+        [Required]
+        [StringLength(30)]
         public string  Lastname { get; set; }
+        [StringLength(12)]
+        public int PhoneNumber { get; set; }
+        [StringLength(255)]
+        public string Email { get; set; }
 
         public Guest()
         {
