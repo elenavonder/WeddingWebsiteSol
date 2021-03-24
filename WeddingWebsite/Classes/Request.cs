@@ -12,7 +12,10 @@ namespace WeddingWebsite.Classes
         public string Justification { get; set; }
         public string RejectionReason { get; set; }
         public string DevliveryMode { get; set; } = "pickup";
-        public string Status { get; set; }
+        public string Status { get; set; } = "New";
+        public decimal Total { get; set; }
+        public int GuestId { get; set; }
+
 
 
         public Request()
