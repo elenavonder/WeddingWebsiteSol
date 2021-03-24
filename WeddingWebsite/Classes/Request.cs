@@ -13,9 +13,9 @@ namespace WeddingWebsite.Classes
         public string RejectionReason { get; set; }
         public string DevliveryMode { get; set; } = "pickup";
         public string Status { get; set; } = "New";
-        public decimal Total { get; set; }
+        public decimal Total { get; set; } = 0;
         public int GuestId { get; set; }
-
+        public virtual Guest Guest { get; set; }
 
 
         public Request()
