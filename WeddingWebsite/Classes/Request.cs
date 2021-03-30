@@ -12,9 +12,16 @@ namespace WeddingWebsite.Classes
         [Required]
         [StringLength(80)]
         public string Description { get; set; }
+        [Required]
+        [StringLength(80)]
         public string Justification { get; set; }
+        [StringLength(80)]
         public string RejectionReason { get; set; }
+        [Required]
+        [StringLength(20)]
         public string DevliveryMode { get; set; } = "pickup";
+        [Required]
+
         public string Status { get; set; } = "New";
         public decimal Total { get; set; } = 0;
         public int GuestId { get; set; }
